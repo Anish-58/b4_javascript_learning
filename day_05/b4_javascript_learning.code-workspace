@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../personal_portfolio"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "b4_javascript_learning"
+  }
+}
