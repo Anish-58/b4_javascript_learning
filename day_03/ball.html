@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Ball</title>
+    <style>
+      #ball {
+        background-color: red;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        position: absolute; /* Changed from relative to absolute */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ball"></div>
+
+    <script>
+      const ball = document.getElementById('ball');
+      document.addEventListener('keydown', handleKeyPress);
+      let position = 0; // Starting position
+
+      function handleKeyPress(event) {
+        if (event.code === 'ArrowRight') {
+          position += 20; // Move right
+          ball.style.left = position + 'px'; // Update left position
+        } else if (event.code === 'ArrowLeft') {
+          position -= 20; // Move left
+          ball.style.left = position + 'px'; // Update left position
+        }
+      }
+    </script>
+  </body>
+</html>
